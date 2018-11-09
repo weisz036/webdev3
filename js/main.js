@@ -41,20 +41,20 @@ request.then(function(values){
 		    	// console.log('thirdPartyVote:', thirdPartyVote);
 		    	console.log('pct3rd:', thirdPartyPct);
 
-		    	// assign colors from the ColorBrewer yellow-green scale
+		  
 		    	var fill;
 		    	// equal interval classification
 		    	// 7% or less
 		    	if (thirdPartyPct <= 7) {
-		    		fill = '#f7fcb9';
+		    		fill = '#ca0020';
 		    	}
 		    	// 11% or less
 		    	else if (thirdPartyPct <= 11) {
-		    		fill = '#addd8e';
+		    		fill = '#f7f7f7';
 		    	}
 		    	// 12% or more
 		    	else {
-		    		fill = '#31a354';
+		    		fill = '#0571bo';
 		    	}
 
 		    	// FIXME: remove existing symbolization and create a diverging
@@ -65,7 +65,7 @@ request.then(function(values){
 
 		    	// return style specification
 		        return {
-		        	color: '#636363',
+		        	color: '#636363'
 		        	weight: 1,
 		        	fillColor: fill,
 		        	fillOpacity: 0.6,
